@@ -1,0 +1,23 @@
+﻿{
+  "manifest_version": 2,
+
+  "name": "Kelime Sayacı",
+  "description": "Kelime ve Karakterleri sayar",
+  "version": "1",
+  "icons": {
+     "16" : "favicon.png",
+     "48" : "favicon.png",
+     "128" : "favicon.png"
+  },
+  "browser_action": {
+    "default_icon": "favicon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://google.com/*"],
+      "css": [],
+      "js": ["jquery.min.js", "popup.js"]
+    }
+  ]
+}
